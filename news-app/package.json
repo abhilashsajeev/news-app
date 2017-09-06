@@ -1,0 +1,28 @@
+{
+  "name": "news-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "material-text-area": "0.0.2",
+    "material-ui": "^0.19.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux-form": "^1.14.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "react-textarea-autosize": "^5.1.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev-server": "json-server -p 8080 ./db.json"
+  },
+  "devDependencies": {
+    "json-server": "^0.12.0"
+  }
+}

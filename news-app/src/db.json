@@ -1,0 +1,76 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Static UI",
+      "thumbnail": "https://placeimg.com/18/18/nature",
+      "image": "https://placeimg.com/640/480/nature",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "isPublished": true
+    },
+    {
+      "id": 2,
+      "title": "Dynamic edit",
+      "thumbnail": "https://placeimg.com/18/18/animals",
+      "image": "https://placeimg.com/640/480/animals",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "isPublished": true
+    },
+    {
+      "title": "temp",
+      "isPublished": false,
+      "thumbnail": "https://placeimg.com/18/18/any",
+      "image": "https://placeimg.com/640/480/any",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 3
+    },
+    {
+      "title": "another todo",
+      "isPublished": true,
+      "thumbnail": "https://placeimg.com/18/18/tech",
+      "image": "https://placeimg.com/640/480/tech",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 4
+    },
+    {
+      "title": "super todo",
+      "isPublished": true,
+      "thumbnail": "https://placeimg.com/18/18/people",
+      "image": "https://placeimg.com/640/480/people",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 5
+    },
+    {
+      "title": "temp",
+      "isPublished": false,
+      "thumbnail": "https://placeimg.com/18/18/arch",
+      "image": "https://placeimg.com/640/480/arch",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 6
+    },
+    {
+      "title": "tempsdd",
+      "isPublished": true,
+      "thumbnail": "https://placeimg.com/18/18/any",
+      "image": "https://placeimg.com/640/480/any",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 7
+    },
+    {
+      "title": "tempss",
+      "isPublished": false,
+      "thumbnail": "https://placeimg.com/18/18/arch",
+      "image": "https://placeimg.com/640/480/arch",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 8
+    },
+    {
+      "title": "tempfgfh",
+      "isPublished": true,
+      "thumbnail": "https://placeimg.com/18/18/any",
+      "image": "https://placeimg.com/640/480/any",
+      "description": "lorem ipsum text lorem jump fox some thing like this will be a large descriptions",
+      "id": 9
+    }
+  ]
+}

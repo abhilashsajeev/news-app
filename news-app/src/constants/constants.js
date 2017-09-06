@@ -1,0 +1,7 @@
+export const LOAD_NEWS = 'LOAD_NEWS';
+export const CLEAR_CURRENT_NEWS = 'CLEAR_CURRENT_NEWS';
+export const SUBMIT_CURRENT_NEWS = 'SUBMIT_CURRENT_NEWS';
+export const PUBLISH_NEWS = 'PUBLISH_NEWS';
+export const UNPUBLISH_NEWS = 'UNPUBLISH_NEWS';
+export const REPLACE_NEWS = 'REPLACE_NEWS';
+export const DELETE_NEWS = 'DELETE_NEWS';
