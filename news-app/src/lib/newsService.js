@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:8080/news' //https://news-app-goplztdsnq.now.sh/news'
+const baseUrl = 'http://localhost:8080/news' ;//https://news-app-goplztdsnq.now.sh/news'
 export const getNews = async () => {
   try {
     const res = await fetch(baseUrl);

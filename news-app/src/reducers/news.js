@@ -11,7 +11,7 @@ export default (state = initState, action) => {
         ...state,
         allNews: action.payload
       };
-    case CLEAR_CURRENT_NEWS:
+    case CLEAR_CURRENT_NEWS: // todo: can be removed after react-redux-form
       return {
         ...state
       }
