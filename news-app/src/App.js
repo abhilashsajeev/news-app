@@ -5,6 +5,7 @@ import Appbar from 'material-ui/AppBar';
 import NewsList from './components/NewsList';
 import NewsAdmin from './components/NewsAdmin';
 import NewsPublic from './components/NewsPublish';
+import Message from './components/Snakbar';
 import Link from './components/Link';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -41,6 +42,7 @@ class App extends Component {
             )} />
           </div>
         </Router>
+        <Message/>
       </div>
     );
   }

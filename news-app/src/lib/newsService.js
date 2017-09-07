@@ -1,6 +1,7 @@
+const baseUrl = 'http://localhost:8080/news' //https://news-app-goplztdsnq.now.sh/news'
 export const getNews = async () => {
   try {
-    const res = await fetch('http://localhost:8080/news');
+    const res = await fetch(baseUrl);
     return res.json();
   } catch (err) {
     return err;
@@ -9,7 +10,7 @@ export const getNews = async () => {
 
 export const addNews = async (news) => {
   try {
-    const res = await fetch('http://localhost:8080/news', {
+    const res = await fetch(baseUrl, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -25,7 +26,7 @@ export const addNews = async (news) => {
 }
 
 export const updateNews = async (news) => {
-  const res = await fetch(`http://localhost:8080/news/${news.id}`, {
+  const res = await fetch(`${baseUrl}/${news.id}`, {
     method: 'PUT',
     headers: {
       'Accept': 'application/json',
@@ -38,12 +39,8 @@ export const updateNews = async (news) => {
 }
 
 export const removeNews = async (id)=> {
-  const res =  await fetch(`http://localhost:8080/news/${id}`, {
+  const res =  await fetch(`${baseUrl}/${id}`, {
     method: 'DELETE',
-    headers: {
-      'Accept': 'application/json',
-      'Content-type': 'application/json',
-    }
   });
-  return res.json();
+  return res;
 }

@@ -5,3 +5,4 @@ export const PUBLISH_NEWS = 'PUBLISH_NEWS';
 export const UNPUBLISH_NEWS = 'UNPUBLISH_NEWS';
 export const REPLACE_NEWS = 'REPLACE_NEWS';
 export const DELETE_NEWS = 'DELETE_NEWS';
+export const SHOW_MESSAGE = 'SHOW_MESSAGE';

@@ -17,10 +17,10 @@ class NewsItem extends Component {
     this.props.publishNews(this.props.id);
   }
   render() {
-    const { title, description, id, thumbnail, image, body, date } = this.props;
+    const { title, description, thumbnail, image, body, date } = this.props;
     let PublishButton, DeleteButton;
     if(this.props.isAdminOnly) {
-      DeleteButton = <Button onClick={this.handleDelete}>UnPublish</Button>;
+      DeleteButton = <Button onClick={this.handleDelete}>Delete</Button>;
       if(this.props.isPublished)
         PublishButton = <Button onClick={this.handlePublish}>UnPublish</Button>;
       else

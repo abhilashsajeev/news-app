@@ -1,16 +1,19 @@
 import { LOAD_NEWS, CLEAR_CURRENT_NEWS, REPLACE_NEWS, DELETE_NEWS } from '../constants/constants';
 import { getNews, addNews, updateNews, removeNews } from '../lib/newsService';
+import { showMessage } from '../reducers/message';
 
 export const loadNews = (news) => {
+  const data = news.length > 0? news: [];
   return {
     type: LOAD_NEWS,
-    payload: news
+    payload: data
   }
 };
 
 export const fetchNews = () => {
-  console.log('calling fetchnews')
+  
   return async (dispatch) => {
+    dispatch(showMessage('Loading news'))
     const news = await getNews();
     dispatch(loadNews(news));
   }
@@ -32,6 +35,7 @@ export const clearCurrentNews = (news) => {
 
 export const createNews = (news) => {
   return async (dispatch) => {
+    dispatch(showMessage('Adding news...'))
     const status = await addNews(news);
     dispatch(clearCurrentNews(status));
   }
@@ -47,23 +51,28 @@ export const replaceNews = (news) => {
 
 export const publishNews = (id) => {
   return async (dispatch, getState) => {
+    dispatch(showMessage('Publishing news...'));
     const { allNews } = getState().news;
     const news = allNews.find(i => id === i.id)
     const updatedNews = { ...news, isPublished: !news.isPublished };
     const res = await updateNews(updatedNews);
-    dispatch(replaceNews(res.news))
+    dispatch(replaceNews(res))
   }
 }
 
-export const removeNewsFromState = (news) => {
+export const removeNewsFromState = (id) => {
   return {
     type: DELETE_NEWS,
-    payload: news
+    payload: id
   }
 }
 export const deleteNews = (id) => {
   return async (dispatch) => {
+    dispatch(showMessage('Deleting news news...'));
     const res = await removeNews(id);
-    dispatch(removeNewsFromState(res));
+    if(res.status === 200){
+      dispatch(removeNewsFromState(id));
+    }
+    
   }
 }

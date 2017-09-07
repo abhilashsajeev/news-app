@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
-import {  Control, Form,  Field  } from 'react-redux-form';
+import {  Control, Form, actions as formActions  } from 'react-redux-form';
 import {connect} from 'react-redux';
 import TextField from 'material-ui/TextField';
 import Button from 'material-ui/RaisedButton'
-import Textarea from 'react-textarea-autosize';
 import {createNews} from '../actions/actions';
 
 const MyButton = (props) => <Button primary={true} {...props}>{props.children}</Button>;
-const MyTextArea = (props) => <Textarea {...props} />;
 const MyTextInput = (props) => <TextField style={{width: '60%'}} {...props} />;
 
 class NewsForm extends Component {
   handleSubmit(news){
     console.log(news);
-    this.props.createNews(news)
+    this.props.createNews(news);
+    this.props.formReset('current');
   }
   render(){
     return (
@@ -63,5 +62,5 @@ class NewsForm extends Component {
 // export default NewsForm;
 export default connect(
   (state) => (state),
-  {createNews}
+  {createNews, formReset: formActions.reset}
 )(NewsForm);
