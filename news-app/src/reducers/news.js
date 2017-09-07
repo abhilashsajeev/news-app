@@ -13,8 +13,7 @@ export default (state = initState, action) => {
       };
     case CLEAR_CURRENT_NEWS:
       return {
-        ...state,
-        currentNews: initState.currentNews
+        ...state
       }
     case REPLACE_NEWS:
       return {
