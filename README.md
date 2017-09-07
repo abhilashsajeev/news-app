@@ -13,4 +13,3 @@
 Navigate to >localhost:3000
 There is a simple http server that serves as json backend. This will be available in 
 >  http://localhost:8080/news
-

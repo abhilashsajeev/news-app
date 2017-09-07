@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Appbar from 'material-ui/AppBar';
 import NewsList from './components/NewsList';
@@ -28,6 +27,7 @@ class App extends Component {
             <Appbar
               title="Redux news app"
               iconElementRight={rightButtons}
+              iconElementLeft={<span></span>}
             />
             <Route path="/home" render={() => (
               <NewsList />

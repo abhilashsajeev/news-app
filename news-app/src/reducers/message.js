@@ -1,7 +1,6 @@
 import {SHOW_MESSAGE, LOAD_NEWS, PUBLISH_NEWS, 
   UNPUBLISH_NEWS, DELETE_NEWS, REPLACE_NEWS} from '../constants/constants';
 
-const initState = '';
 export const showMessage = (val)=> ({type: SHOW_MESSAGE, payload: val});
 
 export default (state = '', action) => {
