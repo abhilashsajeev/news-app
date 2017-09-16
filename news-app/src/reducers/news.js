@@ -21,7 +21,6 @@ export default (state = initState, action) => {
         allNews: state.allNews.map(t => t.id === action.payload.id ? action.payload : t)
       }
     case DELETE_NEWS: 
-    console.log('delted news', action.payload);
     return {
       ...state,
       allNews: state.allNews.filter(n => n.id !== action.payload)
